@@ -1,0 +1,115 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+}
+
+.fundo{
+    background: linear-gradient(180deg, rgba(0,0,0,0.8239670868347339) 0%, rgba(0,212,255,0) 100%), url(./imagens/fundo.png);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titulo{
+    margin-top: 4%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.titulo h1{
+    background: -webkit-linear-gradient(#7b98cd, #834c9998);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    margin-bottom: 2%;
+}
+
+.titulo p{
+    background: -webkit-linear-gradient(#7b98cd, #834c9998);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+.conteudo{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    width: 35%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 50px;
+    background: -webkit-linear-gradient(#877dbda8, #8a387800);
+}
+
+.selecionar select{
+    display: flex;
+    margin-bottom: 20px;
+    width: 35vh;
+    height: 4vh;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #353535;
+    background-color: rgb(230, 227, 227);
+    list-style: none;
+}
+
+.metodo{
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+
+.entrada label{
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+}
+
+.entrada input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 8px 50px 8px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(233, 227, 227)
+}
+
+#passos{
+    display: none;
+}
+
+.entrada button{
+    width: 26vh;
+    height: 4vh;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background: rgba(128, 98, 168, 0.568);
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.entrada button:hover{
+    background: rgb(128, 98, 168);
+    transition: 0.6s;
+}

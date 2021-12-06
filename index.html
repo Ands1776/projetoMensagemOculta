@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equclass="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0">
+    <title>Decifrador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo">
+        <div class="titulo">
+            <h1>Codificador</h1>
+            <p>Cifra de Cesar - Base 64</p>
+        </div>
+        <div class="conteudo">
+            <div class="selecionar">
+                <select class="select" id="selectid"> 
+                    <option disabled selected>Selecione</option>
+                    <option value="base64" class="base">Base64</option>
+                    <option value="cesar" class="cifra">Cifra de Cesar</option>
+                </select>
+            </div>
+            <div class="metodo">
+                <input type="radio" id="crip" name="metodo" value="met1">
+                <label class="selecao" for="descr">Criptografar</label>
+                <br>
+                <input type="radio" id="descr" name="metodo" value="met1">
+                <label class="selecao" for="met1">Descriptografar</label>
+            </div>
+            <div class="entrada" id="">
+                <label for="">Digite aqui</label>
+                <input type="text" name="name" id="entrada">
+                
+                <div id="passos">
+                <label for="" >Passos</label>
+                <input type="number" name="" id="passo">
+                </div>
+                
+                <label for="">Resultado</label>
+                <input type="text" name="name" id="resultado">
+
+
+                
+                <button class="btn"></button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
