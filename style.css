@@ -116,6 +116,8 @@ body{
 }
 
 
-@media (max-width: 970px), (max-height: 764){
-
+@media (max-width: 969px), (max-height: 763){
+    .conteudo{
+        
+    }
 }
