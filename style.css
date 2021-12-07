@@ -49,10 +49,9 @@ body{
     text-align: center;
     align-content: center;
     width: 35%;
-    min-width: 35%;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
     border-radius: 10px;
-    padding: 50px;
+    padding: 30px;
     background: -webkit-linear-gradient(#877dbda8, #8a387800);
 }
 
@@ -116,8 +115,64 @@ body{
 }
 
 
-@media (max-width: 969px), (max-height: 763){
+@media (max-width: 969px), (max-height: 763px){
     .conteudo{
-        
+        width: 36%;
+    }
+}
+
+@media (max-width: 883px), (max-height: 700px){
+    .conteudo{
+        width: 41%;
+    }
+
+    .titulo h1{
+        font-size: 50px;
+    }
+
+    .titulo p{
+        font-size: 30px;
+    }
+
+    .selecionar select{
+        width: 19vh;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .metodo{
+        font-size: 16px;
+    }
+
+    .entrada label{
+        font-size: 18px;
+    }
+
+    .entrada input{
+        padding: 1px 1px 1px 1px;
+    }
+
+    .entrada button{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 654px), (max-height: 547px){
+    .conteudo{
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px){
+    .conteudo{
+        width: 80%;
+    }
+
+    .titulo h1{
+        font-size: 35px;
+    }
+
+    .titulo p{
+        font-size: 25px;
     }
 }
