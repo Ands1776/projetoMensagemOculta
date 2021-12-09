@@ -1,11 +1,18 @@
-*{ 
+*, *::after, *::before{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 .fundo{
@@ -16,11 +23,10 @@ body{
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .titulo{
-    margin-top: 4%;
     margin-bottom: 1%;
     text-align: center;
 }
@@ -51,22 +57,26 @@ body{
     width: 35%;
     margin-bottom: 1px;
     border-radius: 10px;
-    padding: 30px;
     background: -webkit-linear-gradient(#877dbda8, #8a387800);
+    padding-top: 18px;
+}
+
+.selecionar{
+    width: 80%;
 }
 
 .selecionar select{
     display: flex;
-    margin-bottom: 20px;
-    width: 35vh;
+    justify-content: center;
+    width: 100%;
     height: 4vh;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     border-radius: 5px;
-    color: #353535;
-    background-color: rgb(230, 227, 227);
-    list-style: none;
+    color: #000000;
+    background-color: rgba(230, 227, 227, 0.411);
 }
 
 .metodo{
@@ -74,6 +84,11 @@ body{
     font-size: 26px;
     font-weight: bold;
     
+}
+
+.entrada{
+    width: 80%;
+
 }
 
 .entrada label{
@@ -89,7 +104,8 @@ body{
     padding: 8px 50px 8px 50px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(233, 227, 227)
+    background-color: rgb(233, 227, 227);
+    width: 100%;
 }
 
 #passos{
@@ -97,7 +113,7 @@ body{
 }
 
 .entrada button{
-    width: 26vh;
+    width: 100%;
     height: 4vh;
     font-size: 20px;
     font-weight: bold;
@@ -115,13 +131,23 @@ body{
 }
 
 
-@media (max-width: 969px), (max-height: 763px){
+@media (min-width: 1024px){
+    .entrada {
+        width: 50%;
+    }
+
+    .selecionar{
+        width: 50%;
+    }
+}
+
+@media (min-width: 969px){
     .conteudo{
         width: 36%;
     }
 }
 
-@media (max-width: 883px), (max-height: 700px){
+@media (max-width: 883px){
     .conteudo{
         width: 41%;
     }
@@ -134,30 +160,9 @@ body{
         font-size: 30px;
     }
 
-    .selecionar select{
-        width: 19vh;
-        height: 20px;
-        font-size: 15px;
-    }
-
-    .metodo{
-        font-size: 16px;
-    }
-
-    .entrada label{
-        font-size: 18px;
-    }
-
-    .entrada input{
-        padding: 1px 1px 1px 1px;
-    }
-
-    .entrada button{
-        font-size: 14px;
-    }
 }
 
-@media (max-width: 654px), (max-height: 547px){
+@media (max-width: 654px){
     .conteudo{
         width: 50%;
     }
