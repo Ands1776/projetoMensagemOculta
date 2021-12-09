@@ -5,7 +5,7 @@ var passo = document.getElementById('passo') //id do input
 var passos = document.getElementById('passos') //div do input
 var select = document.getElementById('selectid')
 var entrada = document.getElementById('entrada')
-var resultado = document.getElementById('resultado')
+var resultado = document.getElementById('resultado')//
 
 crip.addEventListener('click', function () {
     
